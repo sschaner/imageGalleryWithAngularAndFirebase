@@ -1,0 +1,6 @@
+<div class="container container-grid" *ngIf="imageList">
+  <div *ngFor="let item of imageList" class="container-grid-item">
+    <img [src]="item.imageUrl" />
+    <p class="container-grid-item-caption">{{ item.caption }}</p>
+  </div>
+</div>
